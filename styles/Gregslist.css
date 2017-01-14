@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+	background-color: gainsboro;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0; /* setting the starting positions. the box will only go as far down as the child elements need.*/
+	padding: 10px; /* padding essentially helps by shrinking the border box of the child elements. Now the child elements won't stick to the edges. */
+}
+
+.gl h1 {
+	font-weight: normal;
+    margin: 0;
+    font-size: large;
+    display: inline-block; /* this code specifies to use only as much space is needed by the test in the block. */
+}
+
+.top {
+    position: absolute; /* using this position lets us offset the text with minimal space. its offset is relative to its parent element*/
+    top: 10px;
+    right: 10px;
+}
+
+.top a {
+    padding: 5px;
+}
+
+body {
+    padding: 80px; /* we need this padding to offset the boxes that come after the header */
+}
+
+section {
+    margin-bottom: 30px; /*this gives us whitespace between elements section and nav*/
+}
+
+.search {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.bn {
+	background: white;
+    border-radius: 5px;
+    height: 30px;
+    vertical-align: bottom;
+    border: 1px solid gainsboro;
+}
+
+.mg {
+	height: 100%; /*this will make the img match the height of the box it is in*/
+}
+
+.textbox {
+    width: 400px;
+    padding-left: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.prev, .next {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: black;
+    display: inline-block;
+}
+
+.middle {
+    margin-bottom: 50px;
+    display: inline-block; /*shrinks the blocks to fit the text only*/
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.mid {
+    padding: 8px 25px;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    display: inline-block;
+}
+
+a {
+	text-decoration: none; /*we target all anchor elements to remove the underline. a seperate code will add an underline when the mouse hovers over.*/
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.main {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+li > span {
+	color: gray;
+}
+
+.job {
+	font-weight: bolder;
+	color: blue;
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+li {
+    margin-bottom: 20px;
+}
